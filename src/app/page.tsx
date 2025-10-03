@@ -175,14 +175,17 @@ export default function Home() {
 						subtitle="NDA"
 						description={<>
 							<span className="text-lg">
-								Engineered an advanced data scraping algorithm that generated a real-time, comprehensive dataset of current stock market information for the client. Utilized Python with BeautifulSoup and Selenium to extract data from multiple financial websites, navigating through dynamic content and interactive elements.
+								Contracted to build out a comprehensive tool to ingest, process, and present live stocks data for a private employer, to aid in research and development of investment strategies and market analysis.
 							</span>
 							<ul className="list-disc ml-8 mt-2 space-y-2 text-base">
-								<li>Implemented Reverse Engineering for High-Performance Data Extraction: Used reverse engineering on CoinBase’s front-end to dynamically load and process vast amounts of data, parsing over 1,000 rows per second.</li>
-								<li>Developed a Flask-Based REST API for Data Visualization: Built and deployed a RESTful API using Flask, integrated with MATLAB, NumPy, and Pandas to display key financial metrics in interactive graphs and charts for client insights.</li>
+								<li>Created a high-performance scraper to extract raw live stocks data from multiple sites, using Puppeteer and Selenium to bypass different obfuscators, cleaned it, and loaded it into BigQuery for centralized data warehousing.</li>
+								<li>Implemented Reverse Engineering for High-Performance Data Extraction: Used reverse engineering on CoinBase's front-end to dynamically load and process vast amounts of data, parsing over 1,000 rows per second.</li>
+								<li>Used Pandas to normalize datasets, allowing tracking of stock growth relative to each other while taking into account different parameters such as market cap, volume, and sector performance.</li>
+								<li>Developed a Flask-based REST API to read data from BigQuery, enabling clients to either receive raw JSON data or generate customizable graphs between specific timeframes with dynamic filtering capabilities.</li>
+								<li>Built an internal React tool to quickly navigate, display, and analyze data, providing an intuitive interface for research teams to visualize trends and make data-driven investment decisions.</li>
 							</ul>
 					</>}
-					tags={["Python", "Selenium", "BeautifulSoup", "Flask", "APIs", "Data Visualization"]}
+					tags={["Python", "Puppeteer", "Selenium", "BigQuery", "Pandas", "Flask", "React", "APIs", "Data Visualization"]}
 					imageUrl="images/nda.png"
 					dateRange="Oct 2017 – May 2020"
 				/>
