@@ -75,6 +75,36 @@ export default function Home() {
 				<div className="my-8 flex flex-col items-center w-full gap-12">
 					{/* Example Job Card */}
 					<JobCard
+						title="Contract Senior Software Engineer"
+						subtitle="Newsoul"
+						description={<div>
+							<span className="text-lg">
+								Contract Senior Software Engineer at Newsoul, responsible for architecting and developing a production-grade, scalable full-stack platform using React and Next.js. Led the creation of a real-time conversational AI platform to enhance customer support and internal collaboration, leveraging AWS cloud services and advanced AI technologies.
+							</span>
+							<ul className="list-disc ml-8 mt-2 space-y-2 text-base">
+								<li>
+									Architected a full-stack, production-grade platform using React components, Next.js patterns, and RESTful APIs, enhancing customer support and collaboration.
+								</li>
+								<li>
+									Implemented a microservices backend on AWS with ECS containers, Lambda functions, and S3 storage, achieving a 25% latency decrease and seamless WebSocket connections.
+								</li>
+								<li>
+									Developed responsive UI/UX designs with React hooks, state management using Redux and Context API, and data visualization libraries for real-time monitoring and analytics.
+								</li>
+								<li>
+									Engineered a CI/CD pipeline for deploying scalable solutions, reducing post-meeting documentation time by over 75% and improving first-contact resolution rates by 35%.
+								</li>
+								<li>
+									Integrated cutting-edge AI technologies, including fine-tuned language models and RAG pipelines, to increase AI-generated response accuracy and resolve 60% of tier-1 support tickets.
+								</li>
+							</ul>
+						</div>}
+						tags={["React", "Next.js", "AWS", "ECS", "Lambda", "S3", "WebSocket", "Redux", "Context API", "CI/CD", "AI/ML", "RAG"]}
+						imageUrl="images/newsoul.png"
+						dateRange="Sep 2024 – Oct 2025"
+					/>
+
+					<JobCard
 						title="Senior Software Engineer"
 						subtitle="UMG"
 						description={<div>
@@ -141,26 +171,6 @@ export default function Home() {
 				/>
 
 					<JobCard
-						title="Software Engineer"
-						subtitle="Loop Media"
-						description={<>
-							<span className="text-lg">
-								Became a vital member of Loop Media&apos;s web development team during a high-growth phase, quickly mastering the company&apos;s proprietary content management and streaming systems to support their expanding platform and user base.
-							</span>
-							<ul className="list-disc ml-8 mt-2 space-y-2 text-base">
-								<li>Delivered Key UI/UX and Platform Enhancements: Contributed targeted UI/UX improvements that enhanced engagement and streamlined content delivery workflows, improving viewer retention and satisfaction.</li>
-								<li>Developed Strategic Project Roadmaps for Success: Created detailed project roadmaps with clear milestones and performance metrics, enabling efficient execution of complex projects.</li>
-								<li>Proficiently Transitioned Between React and React Native: Maintained consistency and high standards across web and mobile codebases, ensuring a cohesive user experience.</li>
-								<li>Collaborated with Cross-Functional Teams to Drive Performance: Fostered strong partnerships with product managers, designers, and backend developers, enhancing project efficiency and innovation.</li>
-								<li>Implemented Git Best Practices for Streamlined Development: Established and maintained efficient code tracking, branching, and merging, optimizing collaboration and deployment.</li>
-							</ul>
-					</>}
-					tags={["React", "React Native", "UI/UX", "Project Management", "Git"]}
-					imageUrl="images/loopmedia.png"
-					dateRange="Feb 2018 – May 2020"
-				/>
-
-					<JobCard
 						title="Backend Engineer"
 						subtitle="NDA"
 						description={<>
@@ -174,7 +184,7 @@ export default function Home() {
 					</>}
 					tags={["Python", "Selenium", "BeautifulSoup", "Flask", "APIs", "Data Visualization"]}
 					imageUrl="images/nda.png"
-					dateRange="Oct 2017 – Jun 2018"
+					dateRange="Oct 2017 – May 2020"
 				/>
 				</div>
 			</div>
